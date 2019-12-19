@@ -18,3 +18,5 @@ mix.browserSync({
     proxy: 'vinyl_shop.test',
     port: 3000
 });
+mix.version();
+mix.disableNotifications();

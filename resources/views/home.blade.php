@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.template')
 
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
+@section('title', 'Welcome to The Vinyl Shop')
 
-<body>
-    <h1>
-        The Vinyl Shop
-    </h1>
-    <p>Welcome to the website of the Vinyl Shop, a large online store with lots of (classic) vinyl records.</p>
-</body>
-
-</html>
+@section('main')
+<h1>The Vinyl Shop</h1>
+<p>Welcome to the website of The Vinyl Shop, a large online store with lots of (classic) vinyl records.</p>
+@endsection

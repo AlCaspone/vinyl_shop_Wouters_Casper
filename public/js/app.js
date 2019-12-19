@@ -19233,7 +19233,12 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // Make all functions inside 'vinylShop.js' that start with 'export' accessible inside the HTML pages
+
+
+window.vinylShop = __webpack_require__(/*! ./vinylShop */ "./resources/js/vinylShop.js"); // Run the hello() function
+
+vinylShop.hello();
 
 /***/ }),
 
@@ -19266,6 +19271,22 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/vinylShop.js":
+/*!***********************************!*\
+  !*** ./resources/js/vinylShop.js ***!
+  \***********************************/
+/*! exports provided: hello */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hello", function() { return hello; });
+function hello() {
+  console.log('The Vinyl Shop JavaScript works! 🙂');
+}
 
 /***/ }),
 

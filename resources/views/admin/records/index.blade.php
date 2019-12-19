@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.template')
 
-<head>
-    <meta charset="UTF-8">
-    <title>Records Index</title>
-</head>
+@section('title', 'Contact us')
 
-<body>
+@section('main')
     <h1>Records</h1>
     <ul>
         <?php
@@ -16,7 +12,4 @@
         }
     ?>
     </ul>
-
-</body>
-
-</html>
+@endsection
